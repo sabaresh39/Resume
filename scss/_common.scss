@@ -1,0 +1,24 @@
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+$fm-background-color: #185a9d;
+$fm-primary-color: #43cea2;
+
+/*  fonts  */
+$fm-mb-common-font-1: "ProximaNova-Regular",Helvetica,Arial,sans-serif;
+$fm-mb-common-font-2: "ProximaNova-Medium",Helvetica,Arial,sans-serif;
+$fm-mb-common-font-3: "ProximaNova-Semibold",Helvetica,Arial,sans-serif;
+$fm-mb-common-font-4: "ProximaNova-Bold",Helvetica,Arial,sans-serif;
+$fm-mb-common-font-5: "ProximaNova-Light",Helvetica,Arial,sans-serif;
+
+@mixin fm-common-all-transition($fm-time) {
+  -webkit-transition: all $fm-time cubic-bezier(.15,.69,.83,.67);
+  -moz-transition: all $fm-time cubic-bezier(.15,.69,.83,.67);
+  -ms-transition: all $fm-time cubic-bezier(.15,.69,.83,.67);
+  -o-transition: all $fm-time cubic-bezier(.15,.69,.83,.67);
+  transition: all $fm-time cubic-bezier(.15,.69,.83,.67);
+}
